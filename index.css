@@ -1,0 +1,75 @@
+ /* Axis is a core concept in flexbox.
+  By default, the axis is horizontal, moving from left to right.
+  So the main axis goes from left to right, along the row.
+  The cross axis goes from top to bottom.
+  Different CSS elements position items across these two axises. */
+
+.container {
+    border: 5px solid #ffcc5c;
+    /* display: flex will automatically align items
+    in their container from left to right */
+    display: flex;
+    /*flex-direction: column;
+    Setting the flex-direction to column will cause the items to align top to bottom.
+    In this case, we are now setting the main axis to be top to bottom, and cross axis
+    to left to right for all other css properties dependent on axis.
+    
+    So, for example, justify-content would now affect items along the vertical axis.
+
+    justify-content: center; 
+
+    /*by default, justify-content is set to flex-start, meaning the items
+    will align to the start of the page.  Changing this setting will cause
+    the items to move along the horizontal axis.
+    Other properties:
+        flex-start, flex-end, center, space-around, space-between, space-evenly 
+    
+    Changing the HTML and body height as well as container height will cause
+    the items to grow to the full height of the body (basically the whole page).
+
+    height: 100%;
+
+    /*align-items is set to stretch by default. 
+    Affects the position of the items along the cross axis, or up and down. 
+    align-self can be used to adjust one element. 
+    align-items: center; 
+
+    flex-wrap is set to no wrap by default, so we can explicitly change it
+    by giving a property here to "wrap".
+    */
+
+    flex-wrap: wrap;
+
+  }
+
+  /*.logout {
+      this selects the logout item and pushes it all the way to the left
+      margin-left: auto;
+  }
+
+
+    below, we set up reponsive design for the container's items. 
+    flex: 1 is shorthand for 3 other properties set to these properties:
+
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+
+    It causes the elements to grow and shrink in response to the screen size.
+    Previously, the width used to be adjusted to create the same effect, but
+    width has to be adjusted with every item that is added.
+  
+  .container > div {
+      flex: 1;
+  }
+
+  if you set the flex status of only one item, that item will move while the
+  others stay static
+  
+  .container > .search {
+      flex: 1;
+  }
+  */
+
+  
+
