@@ -51,9 +51,13 @@
     below, we set up reponsive design for the container's items. 
     flex: 1 is shorthand for 3 other properties set to these properties:
 
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0;
+        flex-grow: 1; decides how much extra/remaining space should be 
+        distributed to elements when screen size changes
+        flex-shrink: 1; decides which elements shrink relative to the screen
+        size and each other.  The higher the number, the more relatively
+        larger it shrinks.  
+        flex-basis: 0; sets base width of element.  For example, setting to
+        50% would set an item to 50% of the row.  
 
     It causes the elements to grow and shrink in response to the screen size.
     Previously, the width used to be adjusted to create the same effect, but
@@ -69,7 +73,13 @@
   .container > .search {
       flex: 1;
   }
+
+  Changing Order: the appearance of items' order in the container can be
+  individually reset by using a CSS selector on the item and setting
+  order: 1 to move left or order: -1 to move right.
   */
+
+  
 
   
 
